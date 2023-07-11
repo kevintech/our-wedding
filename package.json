@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "gatsby": "^5.9.1",
+    "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-google-gtag": "^5.10.0",
     "gatsby-plugin-image": "^3.10.0",
     "gatsby-plugin-sharp": "^5.10.0",
@@ -24,7 +25,8 @@
     "gatsby-source-filesystem": "^5.10.0",
     "gatsby-transformer-sharp": "^5.10.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
     "@types/node": "^18.16.5",
