@@ -1,6 +1,8 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-import HeaderVideo from "../components/headerVideo"
+import Welcome from "../components/welcome"
+import CountDown from "../components/countdown"
+import OurStory from "../components/story"
 import Map from "../components/map"
 import "./global.css"
 
@@ -14,7 +16,9 @@ const pageStyles = {
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <main style={pageStyles}>
-      <HeaderVideo/>
+      <Welcome/>
+      <CountDown/>
+      <OurStory/>
       <Map/>
     </main>
   )

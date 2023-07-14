@@ -3,7 +3,9 @@ import type { GatsbyConfig } from "gatsby";
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Welcome to our Wedding`,
-    siteUrl: `https://keveintech.ninja`
+    siteUrl: `https://keveintech.ninja`,
+    weddingDate: `2023-09-09T15:00:00Z`,
+    weddingTimeZone: `America/Guatemala`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -44,6 +46,10 @@ const config: GatsbyConfig = {
         {
           name: `Source Serif Pro`,
           file: `https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap`,
+        },
+        {
+          name: `Playfair Display`,
+          file: `https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap`,
         },
       ],
     },
