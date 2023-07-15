@@ -1,7 +1,7 @@
 import * as React from "react"
 import Video01 from "../video/landing.mp4"
 
-const containerStyle = {
+const containerStyle: React.CSSProperties = {
   backgroundColor: '#000',
   height: '100vh',
   margin: 0,
@@ -9,7 +9,7 @@ const containerStyle = {
   width: '100vw',
 }
 
-const videoStyle = {
+const videoStyle: React.CSSProperties = {
   height:'100%',
   objectFit: 'cover',
   opacity: '0.65',
@@ -38,7 +38,7 @@ const headingTextStyle: React.CSSProperties = {
 const WelcomeComponent: React.FC  = () => {
   return (
     <header style={containerStyle}>
-      <video autoPlay={true} controls={false} muted loop style={videoStyle}>
+      <video controls={false} autoPlay playsInline muted loop style={videoStyle}>
         <source src={Video01} type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>

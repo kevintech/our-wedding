@@ -8,9 +8,9 @@ const containerStyle: React.CSSProperties = {
   backgroundColor: '#000',
   color: '#FFF',
   fontSize: 22,
-  height: '20vh',
+  // height: '20vh',
   margin: 0,
-  padding: '25px',
+  padding: '30px',
   textAlign: 'center',
   width: '100vw',
 }

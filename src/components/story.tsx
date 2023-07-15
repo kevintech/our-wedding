@@ -19,11 +19,11 @@ const StoryComponent: React.FC  = () => {
         <StaticImage src="../images/icons/wedding-ring.png"
           alt="Casa del Alma" width={120}/>
       </div>
-      <h2 style={{fontSize:44, textAlign: 'center'}}>Our Story</h2>
+      <h2 style={{fontFamily:'Playfair Display', fontSize:50, textAlign: 'center'}}>Our Story</h2>
       <div>
         <div style={{margin: '20px 0'}}>
           <StaticImage src="../images/us/casa-del-alma-lichis.jpg"
-            alt="Casa del Alma" placeholder="blurred" width={200}
+            alt="Casa del Alma" placeholder="blurred" width={180}
             style={{float:'left', marginRight: 20}} />
           Our story began with a serendipitous encounter that blossomed into an extraordinary friendship. From the moment we met, a natural connection formed, and our bond grew stronger with each passing day. We found solace in one another's company, sharing laughter, dreams, and secrets. Through countless conversations and experiences, we discovered that we were not just best friends, but soulmates destined to be together.
         </div>
