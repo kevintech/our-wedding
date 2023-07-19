@@ -10,7 +10,7 @@ import Schedule from "../components/schedule"
 import OurGallery from "../components/our-gallery"
 import Music from "../components/music"
 import "./global.css"
-import "./i18n";
+import "../utils/i18n";
 import { useTranslation } from "react-i18next";
 import Footer from "../components/footer"
 
