@@ -1,5 +1,6 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { Trans } from "react-i18next"
 
 const containerStyle: React.CSSProperties = {
   backgroundColor: '#EAEAEA',
@@ -48,46 +49,78 @@ const RsvpComponent: React.FC  = () => {
         <StaticImage src="../images/icons/rsvp.png"
           alt="RSVP Icon" width={120}/>
       </div>
-      <h2 style={{fontFamily:'Playfair Display', fontSize:50, textAlign: 'center'}}>Will you attend to our special day?</h2>
+      <h2 style={{fontFamily:'Playfair Display', fontSize:50, textAlign: 'center'}}>
+        <Trans i18nKey={'rsvpTitle'}>
+        Will you attend to our special day?
+        </Trans>
+      </h2>
       <div>
         <div style={formStyle}>
-          <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+          <form method="get" netlify-honeypot="bot-field" data-netlify="true" name="contact">
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
             <div style={formFieldStyle}>
-              <label style={{fontWeight:'bold'}}>Your Name*
+              <label style={{fontWeight:'bold'}}>
+                <Trans i18nKey={'rsvpNameLabel'}>
+                  Your Name*
+                </Trans>
                 <input type="text" name="name" style={textInputStyle} required />
               </label>
             </div>
             <div style={formFieldStyle}>
-              <label style={{fontWeight:'bold'}}>Your Email
+              <label style={{fontWeight:'bold'}}>
+                <Trans i18nKey={'rsvpEmailLabel'}>
+                  Your Email
+                </Trans>
                 <input type="email" name="email" style={textInputStyle} />
               </label>
             </div>
             <div style={formFieldStyle}>
-              <label style={{fontWeight:'bold'}}>Will you attend?*</label>
-              <label style={{display:'block', margin:'5px 0'}}>
-                <input type="radio" name="attending" id="yes" value="Y"/>Yes, I will be there
+              <label style={{fontWeight:'bold'}}>
+                <Trans i18nKey={'rsvpResponseLabel'}>
+                  Will you attend?*
+                </Trans>
               </label>
               <label style={{display:'block', margin:'5px 0'}}>
-                <input type="radio" name="attending" id="no" value="N"/> Sorry, I can't come
+                <input type="radio" name="attending" id="yes" value="Y"/>
+                <Trans i18nKey={'rsvpResponseYes'}>
+                  Yes, I will be there
+                </Trans>
+              </label>
+              <label style={{display:'block', margin:'5px 0'}}>
+                <input type="radio" name="attending" id="no" value="N"/>
+                <Trans i18nKey={'rsvpResponseNo'}>
+                  Sorry, I can't come
+                </Trans>
               </label>
             </div>
             <div style={formFieldStyle}>
-              <label style={{fontWeight:'bold'}}>Meal preference
+              <label style={{fontWeight:'bold'}}>
+              <Trans i18nKey={'rsvpMealLabel'}>
+                Meal preference
+              </Trans>
               <select name="meal" style={textInputStyle}>
-                <option value="Anything">I eat anything</option>
-                <option value="Beef">Beef</option>
-                <option value="Salmon">Salmon</option>
+                <option value="Anything">
+                  <Trans i18nKey={'rsvpMeal1'}>I eat anything</Trans>
+                </option>
+                <option value="Beef">
+                  <Trans i18nKey={'rsvpMeal2'}>Beef</Trans>
+                </option>
+                <option value="Salmon">
+                  <Trans i18nKey={'rsvpMeal3'}>Salmon</Trans>
+                </option>
               </select></label>
             </div>
             <div style={formFieldStyle}>
-              <label style={{fontWeight:'bold'}}>Message:
+              <label style={{fontWeight:'bold'}}>
+                <Trans i18nKey={'rsvpMessageLabel'}>Message</Trans>
                 <textarea name="message" rows={5} style={textInputStyle}></textarea>
               </label>
             </div>
             <div style={formFieldStyle}>
-              <button type="submit" style={buttonStyle}>Send</button>
+              <button type="submit" style={buttonStyle}>
+                <Trans i18nKey={'rsvpSubmitButton'}>Send</Trans>
+              </button>
             </div>
           </form>
         </div>

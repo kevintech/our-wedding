@@ -17,7 +17,7 @@ const OurGalleryComponent: React.FC  = () => {
   const data = useStaticQuery(graphql`
     query ImagesForGallery {
       images: allFile(
-        filter: { relativeDirectory: { eq: "us" } }
+        filter: { relativeDirectory: { eq: "gallery" } }
         sort: { name: ASC }
       ) {
         edges {

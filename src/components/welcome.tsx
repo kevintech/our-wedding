@@ -1,5 +1,6 @@
 import * as React from "react"
 import Video01 from "../video/landing.mp4"
+import { Trans } from "react-i18next";
 
 const containerStyle: React.CSSProperties = {
   backgroundColor: '#000',
@@ -46,7 +47,11 @@ const WelcomeComponent: React.FC  = () => {
         <h1 style={{...headingTextStyle, textAlign: 'start'}}>Ligia</h1>
         <h3 style={{...headingTextStyle, fontSize:40}}>&</h3>
         <h2 style={{...headingTextStyle, textAlign: 'end'}}>Kevin</h2>
-        <h3 style={{color: '#EAEAEA', fontSize: 20, fontWeight: 'normal', margin: 10, textAlign: 'center'}}  >Saturday, 09 September 2023</h3>
+        <h3 style={{color: '#EAEAEA', fontSize: 20, fontWeight: 'normal', margin: 10, textAlign: 'center'}}  >
+          <Trans i18nKey="welcomeDate">
+            Saturday, September 9, 2023
+          </Trans>
+        </h3>
       </div>
     </header>
   )

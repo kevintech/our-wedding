@@ -1,5 +1,6 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { Trans } from "react-i18next"
 
 const containerStyle: React.CSSProperties = {
   backgroundColor: '#000',
@@ -42,9 +43,17 @@ const SaveTheDateComponent: React.FC  = () => {
           position: "relative",
         }}>
         <div>Save the Date</div>
-        <h2 style={titleStyle}>Celebreate love with us</h2>
+        <h2 style={titleStyle}>
+          <Trans i18nKey="saveTheDatetitle">
+            Celebreate love with us
+          </Trans>
+        </h2>
         <div style={{marginTop:30, textAlign:'center'}}>
-          <div style={{fontSize:25, margin:5}}>September 09, 2023. &mdash; 3pm</div>
+          <div style={{fontSize:25, margin:5}}>
+            <Trans i18nKey="weddingDateTime">
+              September 09, 2023. &mdash; 3pm
+            </Trans>
+          </div>
           <div style={{margin:5}}>
             <a href="https://ul.waze.com/ul?preview_venue_id=176488593.1764623790.28199906&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" style={linkStyle}>
               Villa Bokeh, Antigua Guatemala
@@ -53,7 +62,9 @@ const SaveTheDateComponent: React.FC  = () => {
           <div style={{margin:5}}>Lote 3, Camino a Finca San Nicolás.</div>
         </div>
         <div style={{marginTop:80}}>
+          <Trans i18nKey={'saveTheDateBody'}>
           Embrace the magic of Antigua Guatemala as we celebrate love together. Join us in this enchanting city for a joyous occasion filled with unforgettable moments. Let's create cherished memories in this remarkable destination.
+          </Trans>
         </div>
       </div>
     </div>

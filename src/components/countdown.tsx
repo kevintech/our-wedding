@@ -3,6 +3,7 @@ import useClock from "../utils/use-clock"
 import useSiteMetadata from "../utils/use-site-metadata"
 import remainingTime from "../utils/remaining-time"
 import CountNumber from "./count-number"
+import { useTranslation, Trans } from "react-i18next";
 
 const containerStyle: React.CSSProperties = {
   backgroundColor: '#000',
@@ -18,7 +19,8 @@ const containerStyle: React.CSSProperties = {
 const CountdownComponent: React.FC  = () => {
   const { raw: currentDate } = useClock();
   const { weddingDate, weddingTimeZone } = useSiteMetadata();
-  const isOver = currentDate.isAfter(weddingDate);
+  // const isOver = currentDate.isAfter(weddingDate);
+  const { t } = useTranslation();
   const { 
     remainingDays, 
     remainingHours, 
@@ -28,23 +30,27 @@ const CountdownComponent: React.FC  = () => {
 
   return (
     <div style={containerStyle}>
-      <div>We are counting every second!</div>
+      <div>
+        <Trans i18nKey="countdownTitle">
+          We are counting every second!
+        </Trans>
+      </div>
       <div style={{display:'flex'}}>
         {<CountNumber 
           value={remainingDays.toString().padStart(2,'0')}
-          label={'Days'}
+          label={t('days')}
         />}
         {<CountNumber 
           value={remainingHours.toString().padStart(2,'0')}
-          label={'Hours'}
+          label={t('hours')}
         />}
         {<CountNumber 
           value={remainingMinutes.toString().padStart(2,'0')}
-          label={'Minutes'}
+          label={t('minutes')}
         />}
         {<CountNumber 
           value={remainingSeconds.toString().padStart(2,'0')}
-          label={'Seconds'}
+          label={t('seconds')}
         />}
       </div>
     </div>

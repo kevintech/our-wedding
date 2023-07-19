@@ -25,10 +25,12 @@
     "gatsby-plugin-sitemap": "^6.10.0",
     "gatsby-source-filesystem": "^5.10.0",
     "gatsby-transformer-sharp": "^5.10.0",
+    "i18next-browser-languagedetector": "^7.1.0",
     "moment-timezone": "^0.5.43",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-i18next": "^13.0.2",
     "use-interval": "^1.4.0"
   },
   "devDependencies": {
