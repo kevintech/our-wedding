@@ -4,20 +4,42 @@ import Welcome from "../components/welcome"
 import CountDown from "../components/countdown"
 import OurStory from "../components/story"
 import SaveTheDate from "../components/save-the-date"
-import Map from "../components/map"
+import Registry from "../components/registry"
+import Rsvp from "../components/rsvp"
+import Schedule from "../components/schedule"
+import OurGallery from "../components/our-gallery"
+import Music from "../components/music"
 import "./global.css"
 
 const pageStyles = {
 }
 
 const IndexPage: React.FC<PageProps> = () => {
+  console.log(`
+
+  _____ _                   _    __                              
+ |   __| |_ ___ ___ ___ ___| |  |  |   ___ _ _ ___               
+ |   __|  _| -_|  _|   | .'| |  |  |__| . | | | -_|              
+ |_____|_| |___|_| |_|_|__,|_|  |_____|___|\_/|___|              
+                                        _                        
+  _____ ___    _____         _        _| |_    __    _     _     
+ |     |  _|  |  |  |___ _ _|_|___   |   __|  |  |  |_|___|_|___ 
+ |  |  |  _|  |    -| -_| | | |   |  |   __|  |  |__| | . | | .'|
+ |_____|_|    |__|__|___|\_/|_|_|_|  |_   _|  |_____|_|_  |_|__,|
+                                       |_|            |___|      
+ `);
+ 
   return (
     <main style={pageStyles}>
       <Welcome/>
       <CountDown/>
       <OurStory/>
       <SaveTheDate/>
-      <Map/>
+      <Rsvp/>
+      <Registry/>
+      <Schedule/>
+      <OurGallery/>
+      <Music/>
     </main>
   )
 }

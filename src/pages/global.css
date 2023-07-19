@@ -9,3 +9,7 @@ body, html {
   height: 100%;
   width: 100%;
 }
+
+input, button, textarea, select {
+  font-family: 'Source Serif Pro', serif;
+}

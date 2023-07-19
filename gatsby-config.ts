@@ -2,8 +2,8 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Welcome to our Wedding`,
-    siteUrl: `https://keveintech.ninja`,
+    title: `Welcome to our wedding ~ Kevin & Ligia`,
+    siteUrl: `https://eternalloveofkevinandligia.com`,
     weddingDate: `2023-09-09T15:00:00Z`,
     weddingTimeZone: `America/Guatemala`
   },
@@ -20,7 +20,10 @@ const config: GatsbyConfig = {
       }
     }
   },
-  "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", "gatsby-transformer-sharp",
+  "gatsby-plugin-image",
+  "gatsby-plugin-sitemap",
+  "gatsby-plugin-sharp",
+  "gatsby-transformer-sharp",
   {
     resolve: 'gatsby-source-filesystem',
     options: {

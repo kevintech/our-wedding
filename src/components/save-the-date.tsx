@@ -22,6 +22,11 @@ const titleStyle: React.CSSProperties = {
   textShadow: '4px 4px 8px rgba(0,0,0,0.4)'
 }
 
+const linkStyle: React.CSSProperties = {
+  color: '#FFF',
+  textDecorationStyle: 'dotted'
+}
+
 const SaveTheDateComponent: React.FC  = () => {
   return (
     <div style={containerStyle}>
@@ -40,7 +45,11 @@ const SaveTheDateComponent: React.FC  = () => {
         <h2 style={titleStyle}>Celebreate love with us</h2>
         <div style={{marginTop:30, textAlign:'center'}}>
           <div style={{fontSize:25, margin:5}}>September 09, 2023. &mdash; 3pm</div>
-          <div style={{margin:5}}>Villa Bokeh, Antigua Guatemala</div>
+          <div style={{margin:5}}>
+            <a href="https://ul.waze.com/ul?preview_venue_id=176488593.1764623790.28199906&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" style={linkStyle}>
+              Villa Bokeh, Antigua Guatemala
+            </a>
+          </div>
           <div style={{margin:5}}>Lote 3, Camino a Finca San Nicolás.</div>
         </div>
         <div style={{marginTop:80}}>

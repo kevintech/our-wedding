@@ -64,6 +64,8 @@ Waze: `https://www.waze.com/en/live-map/directions/villa-bokeh-relais-and-chatea
 
 ## Attributions
 
+<a href="https://www.freepik.com/search?format=search&last_filter=type&last_value=icon&query=wedding&type=icon">Icon by Freepik</a>
+
 Image by <a href="https://www.freepik.com/free-vector/watercolor-leaves-with-empty-space_12650438.htm#query=eucalyptus&position=7&from_view=search&track=sph">Freepik</a>
 
 <a href="https://www.freepik.com/free-vector/set-watercolor-flower-leaf-floral-painted-with-watercolor-greeting-invitation-card-decoration_10616787.htm#query=eucalyptus&position=28&from_view=search&track=sph">Image by mokoland</a> on Freepik
