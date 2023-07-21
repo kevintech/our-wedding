@@ -42,7 +42,7 @@ const ScheduleComponent: React.FC  = () => {
       <div>
         <div style={{margin: '20px 0'}}>
           <Trans i18nKey={'scheduleBody'}>
-            This is a brief rundown of how we're expecting the weekend to flow so far. Everything may still change, stay tuned for updates!
+            This is a brief rundown of how we're expecting our wedding celebration to flow so far. Everything may still change, stay tuned for updates!
           </Trans>
         </div>
       </div>

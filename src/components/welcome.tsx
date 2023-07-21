@@ -1,6 +1,7 @@
 import * as React from "react"
 import Video01 from "../video/landing.mp4"
 import { Trans } from "react-i18next";
+import { StaticImage } from "gatsby-plugin-image";
 
 const containerStyle: React.CSSProperties = {
   backgroundColor: '#000',
@@ -36,6 +37,21 @@ const headingTextStyle: React.CSSProperties = {
   textShadow: '4px 4px 8px rgba(0,0,0,0.4)'
 }
 
+const wazeButtonStyle: React.CSSProperties = {
+  // backgroundColor: 'rgba(0,0,0,0.5)',
+  // borderRadius: 100,
+  bottom: 10,
+  left: 10,
+  opacity: 0.8,
+  padding: '5px 15px',
+  position: 'absolute',
+}
+
+const linkStyle: React.CSSProperties = {
+  color: '#FFF',
+  textDecoration: 'none',
+}
+
 const WelcomeComponent: React.FC  = () => {
   return (
     <header style={containerStyle}>
@@ -52,6 +68,17 @@ const WelcomeComponent: React.FC  = () => {
             Saturday, September 9, 2023
           </Trans>
         </h3>
+        <div style={wazeButtonStyle}>
+          <a href="https://ul.waze.com/ul?preview_venue_id=176488593.1764623790.28199906&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" style={linkStyle}>
+            <StaticImage src="../images/icons/waze.png"
+              alt="Waze Icon" placeholder="blurred" width={20}
+              style={{marginRight:5}} />
+            {` `}
+            <Trans i18nKey="getDirectionsBtn">
+              Get Directions
+            </Trans>
+          </a>
+        </div>
       </div>
     </header>
   )

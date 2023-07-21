@@ -100,9 +100,9 @@ const RsvpComponent: React.FC  = () => {
                 Meal preference
               </Trans>
               <select name="meal" style={textInputStyle}>
-                <option value="Anything">
+                {/* <option value="Anything">
                   <Trans i18nKey={'rsvpMeal1'}>I eat anything</Trans>
-                </option>
+                </option> */}
                 <option value="Beef">
                   <Trans i18nKey={'rsvpMeal2'}>Beef</Trans>
                 </option>

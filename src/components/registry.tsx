@@ -28,8 +28,12 @@ const RegistryComponent: React.FC  = () => {
       <div>
         <div style={{margin: '20px 0'}}>
           <Trans i18nKey={'registryBody'}>
-          We’re lucky enough to have nearly everything we need for our home already. If you want to help making our honeymoon unforgettable, you can contribute using the link to the right.
+          We’re lucky enough to have nearly everything we need for our home already. If you want to help making our honeymoon unforgettable, you can contribute using the information below.
           </Trans>
+        </div>
+        <div>
+          <StaticImage src="../images/watashi.png"
+            alt="Registry Information"/>
         </div>
       </div>
     </div>

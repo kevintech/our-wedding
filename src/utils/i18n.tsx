@@ -11,6 +11,7 @@ i18n
       en: {
         translations: {
           welcomeDate: "Saturday, September 9, 2023",
+          getDirectionsBtn: "Get Directions",
           countdownTitle: "We are counting every second!",
           days: 'Days',
           hours: 'Hours',
@@ -38,7 +39,7 @@ i18n
           registryTitle: "Registry",
           registryBody: "We’re lucky enough to have nearly everything we need for our home already. If you want to help making our honeymoon unforgettable, you can contribute using the link to the right.",
           scheduleTitle: "Schedule",
-          scheduleBody: "This is a brief rundown of how we're expecting the weekend to flow so far. Everything may still change, stay tuned for updates!",
+          scheduleBody: "This is a brief rundown of how we're expecting our wedding celebration to flow so far. Everything may still change, stay tuned for updates!",
           scheduleCeremonyTitle: "Ceremony",
           scheduleCeremonyBody: "Our hearts will unite in a picturesque ceremony, surrounded by the tranquil beauty of a lake and the gentle whispers of trees.",
           scheduleCocktailTitle: "Drinks & Snacks",
@@ -52,6 +53,7 @@ i18n
       es: {
         translations: {
           welcomeDate: "Sábado, 9 de septiembre 2023.",
+          getDirectionsBtn: "Obtener Direcciones",
           countdownTitle: "¡Estamos contando cada segundo!",
           days: 'Dias',
           hours: 'Horas',
@@ -72,14 +74,14 @@ i18n
           rsvpResponseNo: "Lo siento, no podre ir",
           rsvpMealLabel: "Preferencia de comida",
           rsvpMeal1: "Como lo que sea",
-          rsvpMeal2: "Res",
-          rsvpMeal3: "Salmón",
+          rsvpMeal2: "Lomito Angus",
+          rsvpMeal3: "Salmón a la Plancha",
           rsvpMessageLabel: "Mensaje",
           rsvpSubmitButton: "Enviar",
           registryTitle: "Lista de Regalos",
-          registryBody: "Tenemos la fortuna de tener casi todo lo que necesitamos para nuestro hogar. Si deseas ayudarnos a hacer inolvidable nuestra luna de miel, puedes contribuir usando el enlace a la derecha.",
+          registryBody: "Tenemos la fortuna de tener casi todo lo que necesitamos para nuestro hogar. Si deseas ayudarnos a hacer inolvidable nuestra luna de miel, puedes contribuir usando la siguiente información:",
           scheduleTitle: "Agenda",
-          scheduleBody: "Este es un breve resumen de cómo esperamos que transcurra el fin de semana hasta el momento. Todo puede cambiar aún, ¡mantente al tanto de las actualizaciones!",
+          scheduleBody: "Este es un breve resumen de cómo esperamos que transcurra nuestra celebración de bodas hasta el momento. Todo puede cambiar aún, ¡mantente al tanto de las actualizaciones!",
           scheduleCeremonyTitle: "Ceremonia",
           scheduleCeremonyBody: "Nuestros corazones se unirán en una ceremonia pintoresca, rodeados por la tranquilidad de un lago y los suaves susurros de los árboles.",
           scheduleCocktailTitle: "Bebidas y Snacks",

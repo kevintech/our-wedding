@@ -33,7 +33,6 @@ const IndexPage: React.FC<PageProps> = () => {
                                        |_|            |___|      
  `);
   const changeLanguage = lng => {
-    // console.log(i18n)
     i18n.changeLanguage(lng);
   };
 

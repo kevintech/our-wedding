@@ -54,8 +54,12 @@ const SaveTheDateComponent: React.FC  = () => {
               September 09, 2023. &mdash; 3pm
             </Trans>
           </div>
-          <div style={{margin:5}}>
+          <div style={{margin:'10px 5px 5px'}}>
             <a href="https://ul.waze.com/ul?preview_venue_id=176488593.1764623790.28199906&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location" style={linkStyle}>
+              <StaticImage src="../images/icons/waze.png"
+                alt="Waze Icon" placeholder="blurred" width={20}
+                style={{marginRight:5}} />
+              {` `}
               Villa Bokeh, Antigua Guatemala
             </a>
           </div>
