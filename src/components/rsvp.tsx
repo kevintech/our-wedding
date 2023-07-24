@@ -56,7 +56,7 @@ const RsvpComponent: React.FC  = () => {
       </h2>
       <div>
         <div style={formStyle}>
-          <form method="get" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+          <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
             <div style={formFieldStyle}>

@@ -31,9 +31,9 @@ const RegistryComponent: React.FC  = () => {
           We’re lucky enough to have nearly everything we need for our home already. If you want to help making our honeymoon unforgettable, you can contribute using the information below.
           </Trans>
         </div>
-        <div>
+        <div style={{textAlign: 'center'}}>
           <StaticImage src="../images/watashi.png"
-            alt="Registry Information"/>
+            alt="Registry Information" />
         </div>
       </div>
     </div>
