@@ -5,7 +5,7 @@ import CountDown from "../components/countdown"
 import OurStory from "../components/story"
 import SaveTheDate from "../components/save-the-date"
 import Registry from "../components/registry"
-import Rsvp from "../components/rsvp"
+import Rsvp from "../components/rsvp-closed"
 import Schedule from "../components/schedule"
 import OurGallery from "../components/our-gallery"
 import Music from "../components/music"
@@ -40,11 +40,11 @@ const IndexPage: React.FC<PageProps> = () => {
     <main style={pageStyles}>
       <Welcome/>
       <CountDown/>
-      <OurStory/>
-      <SaveTheDate/>
       <Rsvp/>
+      <SaveTheDate/>
       <Registry/>
       <Schedule/>
+      <OurStory/>
       <OurGallery/>
       <Music/>
       <Footer changeLanguageFn={changeLanguage}/>
