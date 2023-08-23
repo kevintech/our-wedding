@@ -17,7 +17,7 @@ const containerStyle: React.CSSProperties = {
 }
 
 const CountdownComponent: React.FC  = () => {
-  const { raw: currentDate } = useClock();
+  const { raw: currentDate, onTimezone: currentDateTz } = useClock();
   const { weddingDate, weddingTimeZone } = useSiteMetadata();
   // const isOver = currentDate.isAfter(weddingDate);
   const { t } = useTranslation();
@@ -26,7 +26,7 @@ const CountdownComponent: React.FC  = () => {
     remainingHours, 
     remainingMinutes, 
     remainingSeconds 
-  } = remainingTime(weddingDate, currentDate, weddingTimeZone);
+  } = remainingTime(weddingDate, currentDateTz(), weddingTimeZone);
 
   return (
     <div style={containerStyle}>

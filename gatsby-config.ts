@@ -4,7 +4,7 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `Welcome to our wedding ~ Kevin & Ligia`,
     siteUrl: `https://eternalloveofkevinandligia.com`,
-    weddingDate: `2023-09-09T15:00:00Z`,
+    weddingDate: `2023-09-09 15:00`,
     weddingTimeZone: `America/Guatemala`
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.

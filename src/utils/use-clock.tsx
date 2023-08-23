@@ -11,7 +11,7 @@ const useClock = (format = "DD/MM/YYYY HH:mm:ss", period = 1000) => {
 
   return {
     time: time.format(format),
-    onTimezone: (timezone = moment.tz.guess()) => time.clone().tz(timezone).format(format),
+    onTimezone: (timezone = moment.tz.guess()) => time.clone().tz(timezone),
     raw: time
   }
 };

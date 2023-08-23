@@ -5,7 +5,8 @@ export default function useSiteMetadata() {
     {
       site {
         siteMetadata {
-          weddingDate
+          weddingDate,
+          weddingTimeZone
         }
       }
     }
